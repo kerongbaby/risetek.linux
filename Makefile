@@ -565,7 +565,7 @@ drivers-y	:= drivers/
 net-y		:= net/
 libs-y		:= lib/
 core-y		:= usr/
-virt-y		:= virt/
+virt-y		:= 
 endif # KBUILD_EXTMOD
 
 ifeq ($(dot-config),1)

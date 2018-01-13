@@ -120,8 +120,6 @@ source "drivers/auxdisplay/Kconfig"
 
 source "drivers/uio/Kconfig"
 
-source "drivers/vfio/Kconfig"
-
 source "drivers/vlynq/Kconfig"
 
 source "drivers/virt/Kconfig"

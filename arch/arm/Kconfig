@@ -2070,5 +2070,3 @@ source "arch/arm/crypto/Kconfig"
 endif
 
 source "lib/Kconfig"
-
-source "arch/arm/kvm/Kconfig"
