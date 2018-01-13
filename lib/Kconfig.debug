@@ -1964,8 +1964,6 @@ config TEST_STATIC_KEYS
 
 	  If unsure, say N.
 
-source "samples/Kconfig"
-
 source "lib/Kconfig.kgdb"
 
 source "lib/Kconfig.ubsan"
