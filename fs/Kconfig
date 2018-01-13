@@ -30,7 +30,6 @@ source "fs/jfs/Kconfig"
 source "fs/xfs/Kconfig"
 source "fs/gfs2/Kconfig"
 source "fs/ocfs2/Kconfig"
-source "fs/btrfs/Kconfig"
 source "fs/nilfs2/Kconfig"
 source "fs/f2fs/Kconfig"
 
@@ -101,7 +100,6 @@ source "fs/notify/Kconfig"
 
 source "fs/quota/Kconfig"
 
-source "fs/autofs4/Kconfig"
 source "fs/fuse/Kconfig"
 source "fs/overlayfs/Kconfig"
 
@@ -224,13 +222,9 @@ menuconfig MISC_FILESYSTEMS
 if MISC_FILESYSTEMS
 
 source "fs/orangefs/Kconfig"
-source "fs/adfs/Kconfig"
-source "fs/affs/Kconfig"
 source "fs/ecryptfs/Kconfig"
 source "fs/hfs/Kconfig"
 source "fs/hfsplus/Kconfig"
-source "fs/befs/Kconfig"
-source "fs/bfs/Kconfig"
 source "fs/efs/Kconfig"
 source "fs/jffs2/Kconfig"
 # UBIFS File system configuration
