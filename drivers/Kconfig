@@ -24,13 +24,9 @@ source "drivers/nvme/Kconfig"
 
 source "drivers/misc/Kconfig"
 
-source "drivers/ide/Kconfig"
-
 source "drivers/scsi/Kconfig"
 
 source "drivers/md/Kconfig"
-
-source "drivers/target/Kconfig"
 
 source "drivers/message/fusion/Kconfig"
 
@@ -50,8 +46,6 @@ source "drivers/i2c/Kconfig"
 
 source "drivers/spi/Kconfig"
 
-source "drivers/spmi/Kconfig"
-
 source "drivers/hsi/Kconfig"
 
 source "drivers/pps/Kconfig"
@@ -66,13 +60,7 @@ source "drivers/power/Kconfig"
 
 source "drivers/hwmon/Kconfig"
 
-source "drivers/thermal/Kconfig"
-
 source "drivers/watchdog/Kconfig"
-
-source "drivers/ssb/Kconfig"
-
-source "drivers/bcma/Kconfig"
 
 source "drivers/mfd/Kconfig"
 
@@ -118,8 +106,6 @@ source "drivers/virtio/Kconfig"
 
 source "drivers/hv/Kconfig"
 
-source "drivers/staging/Kconfig"
-
 source "drivers/platform/Kconfig"
 
 source "drivers/clk/Kconfig"
@@ -127,8 +113,6 @@ source "drivers/clk/Kconfig"
 source "drivers/hwspinlock/Kconfig"
 
 source "drivers/clocksource/Kconfig"
-
-source "drivers/mailbox/Kconfig"
 
 source "drivers/iommu/Kconfig"
 
@@ -149,8 +133,6 @@ source "drivers/iio/Kconfig"
 source "drivers/pwm/Kconfig"
 
 source "drivers/irqchip/Kconfig"
-
-source "drivers/ipack/Kconfig"
 
 source "drivers/reset/Kconfig"
 
