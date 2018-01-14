@@ -23,11 +23,6 @@ config FS_MBCACHE
 	default y if EXT4_FS=y
 	default m if EXT2_FS_XATTR || EXT4_FS
 
-source "fs/jfs/Kconfig"
-
-source "fs/xfs/Kconfig"
-source "fs/nilfs2/Kconfig"
-
 config FS_DAX
 	bool "Direct Access (DAX) support"
 	depends on MMU
@@ -215,8 +210,6 @@ menuconfig MISC_FILESYSTEMS
 if MISC_FILESYSTEMS
 
 source "fs/ecryptfs/Kconfig"
-source "fs/hfs/Kconfig"
-source "fs/hfsplus/Kconfig"
 source "fs/efs/Kconfig"
 source "fs/jffs2/Kconfig"
 # UBIFS File system configuration
@@ -225,11 +218,9 @@ source "fs/logfs/Kconfig"
 source "fs/cramfs/Kconfig"
 source "fs/squashfs/Kconfig"
 source "fs/omfs/Kconfig"
-source "fs/hpfs/Kconfig"
 source "fs/romfs/Kconfig"
 source "fs/pstore/Kconfig"
 source "fs/sysv/Kconfig"
-source "fs/ufs/Kconfig"
 source "fs/exofs/Kconfig"
 
 endif # MISC_FILESYSTEMS
