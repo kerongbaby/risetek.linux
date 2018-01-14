@@ -40,8 +40,6 @@ source "drivers/macintosh/Kconfig"
 
 source "drivers/net/Kconfig"
 
-source "drivers/isdn/Kconfig"
-
 source "drivers/lightnvm/Kconfig"
 
 # input before char - char/joystick depends on it. As does USB.
@@ -191,7 +189,5 @@ source "drivers/nvmem/Kconfig"
 source "drivers/hwtracing/stm/Kconfig"
 
 source "drivers/hwtracing/intel_th/Kconfig"
-
-source "drivers/fpga/Kconfig"
 
 endmenu
