@@ -48,10 +48,6 @@ source "drivers/spi/Kconfig"
 
 source "drivers/hsi/Kconfig"
 
-source "drivers/pps/Kconfig"
-
-source "drivers/ptp/Kconfig"
-
 source "drivers/pinctrl/Kconfig"
 
 source "drivers/gpio/Kconfig"
@@ -96,10 +92,6 @@ source "drivers/dca/Kconfig"
 
 source "drivers/auxdisplay/Kconfig"
 
-source "drivers/uio/Kconfig"
-
-source "drivers/vlynq/Kconfig"
-
 source "drivers/virt/Kconfig"
 
 source "drivers/virtio/Kconfig"
@@ -116,10 +108,6 @@ source "drivers/clocksource/Kconfig"
 
 source "drivers/iommu/Kconfig"
 
-source "drivers/remoteproc/Kconfig"
-
-source "drivers/rpmsg/Kconfig"
-
 source "drivers/soc/Kconfig"
 
 source "drivers/devfreq/Kconfig"
@@ -134,8 +122,6 @@ source "drivers/pwm/Kconfig"
 
 source "drivers/irqchip/Kconfig"
 
-source "drivers/reset/Kconfig"
-
 source "drivers/fmc/Kconfig"
 
 source "drivers/phy/Kconfig"
@@ -145,10 +131,6 @@ source "drivers/powercap/Kconfig"
 source "drivers/mcb/Kconfig"
 
 source "drivers/perf/Kconfig"
-
-source "drivers/ras/Kconfig"
-
-source "drivers/thunderbolt/Kconfig"
 
 source "drivers/android/Kconfig"
 
