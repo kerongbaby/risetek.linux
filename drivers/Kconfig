@@ -6,8 +6,6 @@ source "drivers/base/Kconfig"
 
 source "drivers/bus/Kconfig"
 
-source "drivers/connector/Kconfig"
-
 source "drivers/mtd/Kconfig"
 
 source "drivers/of/Kconfig"
@@ -80,15 +78,11 @@ source "drivers/accessibility/Kconfig"
 
 source "drivers/infiniband/Kconfig"
 
-source "drivers/edac/Kconfig"
-
 source "drivers/rtc/Kconfig"
 
 source "drivers/dma/Kconfig"
 
 source "drivers/dma-buf/Kconfig"
-
-source "drivers/dca/Kconfig"
 
 source "drivers/auxdisplay/Kconfig"
 
@@ -132,11 +126,7 @@ source "drivers/mcb/Kconfig"
 
 source "drivers/perf/Kconfig"
 
-source "drivers/android/Kconfig"
-
 source "drivers/nvdimm/Kconfig"
-
-source "drivers/dax/Kconfig"
 
 source "drivers/nvmem/Kconfig"
 
