@@ -13,7 +13,6 @@ if BLOCK
 config FS_IOMAP
 	bool
 
-source "fs/ext2/Kconfig"
 source "fs/ext4/Kconfig"
 source "fs/jbd2/Kconfig"
 
@@ -31,7 +30,6 @@ source "fs/xfs/Kconfig"
 source "fs/gfs2/Kconfig"
 source "fs/ocfs2/Kconfig"
 source "fs/nilfs2/Kconfig"
-source "fs/f2fs/Kconfig"
 
 config FS_DAX
 	bool "Direct Access (DAX) support"
@@ -100,7 +98,6 @@ source "fs/notify/Kconfig"
 
 source "fs/quota/Kconfig"
 
-source "fs/fuse/Kconfig"
 source "fs/overlayfs/Kconfig"
 
 menu "Caches"
