@@ -94,16 +94,12 @@ source "fs/overlayfs/Kconfig"
 
 menu "Caches"
 
-source "fs/fscache/Kconfig"
 source "fs/cachefiles/Kconfig"
 
 endmenu
 
 if BLOCK
 menu "CD-ROM/DVD Filesystems"
-
-source "fs/isofs/Kconfig"
-source "fs/udf/Kconfig"
 
 endmenu
 endif # BLOCK
@@ -209,17 +205,9 @@ menuconfig MISC_FILESYSTEMS
 
 if MISC_FILESYSTEMS
 
-source "fs/ecryptfs/Kconfig"
-source "fs/efs/Kconfig"
-source "fs/jffs2/Kconfig"
 # UBIFS File system configuration
 source "fs/ubifs/Kconfig"
-source "fs/logfs/Kconfig"
 source "fs/cramfs/Kconfig"
-source "fs/squashfs/Kconfig"
-source "fs/omfs/Kconfig"
-source "fs/romfs/Kconfig"
-source "fs/pstore/Kconfig"
 source "fs/sysv/Kconfig"
 source "fs/exofs/Kconfig"
 
@@ -274,6 +262,5 @@ source "net/sunrpc/Kconfig"
 endif # NETWORK_FILESYSTEMS
 
 source "fs/nls/Kconfig"
-source "fs/dlm/Kconfig"
 
 endmenu
