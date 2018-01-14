@@ -23,12 +23,9 @@ config FS_MBCACHE
 	default y if EXT4_FS=y
 	default m if EXT2_FS_XATTR || EXT4_FS
 
-source "fs/reiserfs/Kconfig"
 source "fs/jfs/Kconfig"
 
 source "fs/xfs/Kconfig"
-source "fs/gfs2/Kconfig"
-source "fs/ocfs2/Kconfig"
 source "fs/nilfs2/Kconfig"
 
 config FS_DAX
@@ -120,7 +117,6 @@ if BLOCK
 menu "DOS/FAT/NT Filesystems"
 
 source "fs/fat/Kconfig"
-source "fs/ntfs/Kconfig"
 
 endmenu
 endif # BLOCK
@@ -218,7 +214,6 @@ menuconfig MISC_FILESYSTEMS
 
 if MISC_FILESYSTEMS
 
-source "fs/orangefs/Kconfig"
 source "fs/ecryptfs/Kconfig"
 source "fs/hfs/Kconfig"
 source "fs/hfsplus/Kconfig"
