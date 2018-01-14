@@ -36,8 +36,6 @@ source "drivers/message/fusion/Kconfig"
 
 source "drivers/firewire/Kconfig"
 
-source "drivers/macintosh/Kconfig"
-
 source "drivers/net/Kconfig"
 
 source "drivers/lightnvm/Kconfig"
@@ -64,8 +62,6 @@ source "drivers/pinctrl/Kconfig"
 
 source "drivers/gpio/Kconfig"
 
-source "drivers/w1/Kconfig"
-
 source "drivers/power/Kconfig"
 
 source "drivers/hwmon/Kconfig"
@@ -89,8 +85,6 @@ source "drivers/video/Kconfig"
 source "drivers/hid/Kconfig"
 
 source "drivers/usb/Kconfig"
-
-source "drivers/uwb/Kconfig"
 
 source "drivers/mmc/Kconfig"
 
@@ -151,10 +145,6 @@ source "drivers/extcon/Kconfig"
 source "drivers/memory/Kconfig"
 
 source "drivers/iio/Kconfig"
-
-source "drivers/ntb/Kconfig"
-
-source "drivers/vme/Kconfig"
 
 source "drivers/pwm/Kconfig"
 
