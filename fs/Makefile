@@ -83,3 +83,4 @@ obj-$(CONFIG_DEBUG_FS)		+= debugfs/
 obj-$(CONFIG_TRACING)		+= tracefs/
 obj-y				+= exofs/ # Multiple modules
 obj-$(CONFIG_EFIVAR_FS)		+= efivarfs/
+obj-y				+= yaffs2
