@@ -56,6 +56,7 @@ dtb-$(CONFIG_SOC_SAM_V7) += \
 	at91-sama5d2_xplained_pda7.dtb \
 	at91-sama5d2_xplained_pda7b.dtb \
 	at91-sama5d3_xplained.dtb \
+	at91-sama5d3_RWA500.dtb \
 	at91-sama5d3_xplained_pda4.dtb \
 	at91-sama5d3_xplained_pda7.dtb \
 	at91-sama5d3_xplained_pda7b.dtb \
