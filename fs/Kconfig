@@ -262,3 +262,4 @@ endif # NETWORK_FILESYSTEMS
 source "fs/nls/Kconfig"
 
 endmenu
+source "fs/yaffs2/Kconfig"
