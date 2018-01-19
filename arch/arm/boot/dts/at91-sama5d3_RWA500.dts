@@ -7,10 +7,14 @@
  * Licensed under GPLv2 or later.
  */
 /dts-v1/;
-#include "sama5d36.dtsi"
+#include "sama5d3.dtsi"
+#include "sama5d3_emac.dtsi"
+#include "sama5d3_mci2.dtsi"
+#include "sama5d3_tcb1.dtsi"
+#include "sama5d3_uart.dtsi"
 
 / {
-	model = "SAMA5D3 Xplained";
+	model = "SAMA5D3 RWA500";
 	compatible = "atmel,sama5d3-xplained", "atmel,sama5d3", "atmel,sama5";
 
 	chosen {
@@ -18,7 +22,7 @@
 	};
 
 	memory {
-		reg = <0x20000000 0x10000000>;
+		reg = <0x20000000 0x08000000>;
 	};
 
 	clocks {
@@ -94,16 +98,6 @@
 					pinctrl_key_gpio: key_gpio_0 {
 						atmel,pins =
 							<AT91_PIOE 29 AT91_PERIPH_GPIO AT91_PINCTRL_PULL_UP_DEGLITCH>;
-					};
-
-					pinctrl_mmc0_cd: mmc0_cd {
-						atmel,pins =
-							<AT91_PIOE 0 AT91_PERIPH_GPIO AT91_PINCTRL_PULL_UP_DEGLITCH>;
-					};
-
-					pinctrl_mmc1_cd: mmc1_cd {
-						atmel,pins =
-							<AT91_PIOE 1 AT91_PERIPH_GPIO AT91_PINCTRL_PULL_UP_DEGLITCH>;
 					};
 
 					pinctrl_usba_vbus: usba_vbus {
