@@ -14,7 +14,6 @@ obj-$(CONFIG_NET)		+= $(tmp-y)
 obj-$(CONFIG_NET)		+= ethernet/ 802/ sched/ netlink/
 obj-$(CONFIG_NETFILTER)		+= netfilter/
 obj-$(CONFIG_INET)		+= ipv4/
-obj-$(CONFIG_XFRM)		+= xfrm/
 obj-$(CONFIG_UNIX)		+= unix/
 obj-$(CONFIG_NET)		+= ipv6/
 obj-$(CONFIG_PACKET)		+= packet/
@@ -25,28 +24,16 @@ obj-$(CONFIG_NETROM)		+= netrom/
 obj-$(CONFIG_ROSE)		+= rose/
 obj-$(CONFIG_CAN)		+= can/
 obj-$(CONFIG_SUNRPC)		+= sunrpc/
-obj-$(CONFIG_AF_RXRPC)		+= rxrpc/
-obj-$(CONFIG_AF_KCM)		+= kcm/
-obj-$(CONFIG_STREAM_PARSER)	+= strparser/
 obj-$(CONFIG_L2TP)		+= l2tp/
-obj-$(CONFIG_PHONET)		+= phonet/
 ifneq ($(CONFIG_VLAN_8021Q),)
 obj-y				+= 8021q/
 endif
-obj-$(CONFIG_IP_SCTP)		+= sctp/
-obj-$(CONFIG_RDS)		+= rds/
 obj-$(CONFIG_WIRELESS)		+= wireless/
 obj-$(CONFIG_MAC80211)		+= mac80211/
-obj-$(CONFIG_IUCV)		+= iucv/
 obj-$(CONFIG_RFKILL)		+= rfkill/
-obj-$(CONFIG_6LOWPAN)		+= 6lowpan/
 
 ifeq ($(CONFIG_NET),y)
 obj-$(CONFIG_SYSCTL)		+= sysctl_net.o
 endif
 obj-$(CONFIG_DNS_RESOLVER)	+= dns_resolver/
 obj-$(CONFIG_OPENVSWITCH)	+= openvswitch/
-ifneq ($(CONFIG_NET_SWITCHDEV),)
-obj-y				+= switchdev/
-endif
-obj-$(CONFIG_QRTR)		+= qrtr/
