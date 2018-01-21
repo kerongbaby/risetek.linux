@@ -4526,7 +4526,7 @@ int yaffs_get_obj_name(struct yaffs_obj *obj, YCHAR *name, int buffer_size)
 	} else if (obj->short_name[0]) {
 		strcpy(name, obj->short_name);
 	} else if (obj->hdr_chunk > 0) {
-		int result;
+		int result = YAFFS_FAIL;
 		u8 *buffer = yaffs_get_temp_buffer(obj->my_dev);
 
 		struct yaffs_obj_hdr *oh = (struct yaffs_obj_hdr *)buffer;
