@@ -21,7 +21,6 @@ obj-$(CONFIG_NET_KEY)		+= key/
 obj-$(CONFIG_BRIDGE)		+= bridge/
 obj-$(CONFIG_NET_DSA)		+= dsa/
 obj-$(CONFIG_NETROM)		+= netrom/
-obj-$(CONFIG_ROSE)		+= rose/
 obj-$(CONFIG_CAN)		+= can/
 obj-$(CONFIG_SUNRPC)		+= sunrpc/
 obj-$(CONFIG_L2TP)		+= l2tp/
@@ -36,4 +35,3 @@ ifeq ($(CONFIG_NET),y)
 obj-$(CONFIG_SYSCTL)		+= sysctl_net.o
 endif
 obj-$(CONFIG_DNS_RESOLVER)	+= dns_resolver/
-obj-$(CONFIG_OPENVSWITCH)	+= openvswitch/
