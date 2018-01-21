@@ -205,30 +205,19 @@ endif
 
 source "net/sctp/Kconfig"
 source "net/rds/Kconfig"
-source "net/atm/Kconfig"
 source "net/l2tp/Kconfig"
 source "net/802/Kconfig"
 source "net/bridge/Kconfig"
 source "net/dsa/Kconfig"
 source "net/8021q/Kconfig"
-source "net/llc/Kconfig"
-source "net/lapb/Kconfig"
 source "net/phonet/Kconfig"
 source "net/6lowpan/Kconfig"
-source "net/ieee802154/Kconfig"
-source "net/mac802154/Kconfig"
 source "net/sched/Kconfig"
-source "net/dcb/Kconfig"
 source "net/dns_resolver/Kconfig"
-source "net/batman-adv/Kconfig"
 source "net/openvswitch/Kconfig"
 source "net/netlink/Kconfig"
-source "net/mpls/Kconfig"
-source "net/hsr/Kconfig"
 source "net/switchdev/Kconfig"
-source "net/l3mdev/Kconfig"
 source "net/qrtr/Kconfig"
-source "net/ncsi/Kconfig"
 
 config RPS
 	bool
@@ -354,7 +343,6 @@ endmenu
 
 endmenu
 
-source "net/ax25/Kconfig"
 source "net/can/Kconfig"
 source "net/rxrpc/Kconfig"
 source "net/kcm/Kconfig"
@@ -376,8 +364,6 @@ source "net/mac80211/Kconfig"
 endif # WIRELESS
 
 source "net/rfkill/Kconfig"
-source "net/9p/Kconfig"
-source "net/nfc/Kconfig"
 
 config LWTUNNEL
 	bool "Network light weight tunnels"
