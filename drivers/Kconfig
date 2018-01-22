@@ -28,8 +28,6 @@ source "drivers/md/Kconfig"
 
 source "drivers/message/fusion/Kconfig"
 
-source "drivers/firewire/Kconfig"
-
 source "drivers/net/Kconfig"
 
 source "drivers/lightnvm/Kconfig"
@@ -44,15 +42,11 @@ source "drivers/i2c/Kconfig"
 
 source "drivers/spi/Kconfig"
 
-source "drivers/hsi/Kconfig"
-
 source "drivers/pinctrl/Kconfig"
 
 source "drivers/gpio/Kconfig"
 
 source "drivers/power/Kconfig"
-
-source "drivers/hwmon/Kconfig"
 
 source "drivers/watchdog/Kconfig"
 
@@ -76,8 +70,6 @@ source "drivers/leds/Kconfig"
 
 source "drivers/accessibility/Kconfig"
 
-source "drivers/infiniband/Kconfig"
-
 source "drivers/rtc/Kconfig"
 
 source "drivers/dma/Kconfig"
@@ -90,13 +82,9 @@ source "drivers/virt/Kconfig"
 
 source "drivers/virtio/Kconfig"
 
-source "drivers/hv/Kconfig"
-
 source "drivers/platform/Kconfig"
 
 source "drivers/clk/Kconfig"
-
-source "drivers/hwspinlock/Kconfig"
 
 source "drivers/clocksource/Kconfig"
 
@@ -106,8 +94,6 @@ source "drivers/soc/Kconfig"
 
 source "drivers/devfreq/Kconfig"
 
-source "drivers/extcon/Kconfig"
-
 source "drivers/memory/Kconfig"
 
 source "drivers/iio/Kconfig"
@@ -115,8 +101,6 @@ source "drivers/iio/Kconfig"
 source "drivers/pwm/Kconfig"
 
 source "drivers/irqchip/Kconfig"
-
-source "drivers/fmc/Kconfig"
 
 source "drivers/phy/Kconfig"
 
@@ -129,9 +113,5 @@ source "drivers/perf/Kconfig"
 source "drivers/nvdimm/Kconfig"
 
 source "drivers/nvmem/Kconfig"
-
-source "drivers/hwtracing/stm/Kconfig"
-
-source "drivers/hwtracing/intel_th/Kconfig"
 
 endmenu
