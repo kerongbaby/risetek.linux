@@ -126,6 +126,11 @@
 				label = "rootfs";
 				reg = <0x400000 0x01c00000>;
 			};
+
+			works@2000000 {
+				label = "works";
+				reg = <0x2000000 0x07c00000>;
+			};
 		};
 
 		usb0: gadget@00500000 {
