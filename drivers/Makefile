@@ -14,7 +14,6 @@ obj-$(CONFIG_GENERIC_PHY)	+= phy/
 obj-$(CONFIG_PINCTRL)		+= pinctrl/
 obj-$(CONFIG_GPIOLIB)		+= gpio/
 obj-y				+= pwm/
-obj-$(CONFIG_PCI)		+= pci/
 obj-$(CONFIG_PARISC)		+= parisc/
 obj-y				+= video/
 obj-y				+= idle/
@@ -24,7 +23,6 @@ obj-y				+= char/ipmi/
 
 # PnP must come after ACPI since it will eventually need to check if acpi
 # was used and do nothing if so
-obj-$(CONFIG_PNP)		+= pnp/
 obj-y				+= amba/
 
 obj-y				+= clk/
@@ -34,8 +32,6 @@ obj-$(CONFIG_DMADEVICES)	+= dma/
 
 # SOC specific infrastructure drivers.
 obj-y				+= soc/
-
-obj-$(CONFIG_VIRTIO)		+= virtio/
 
 # regulators early, since some subsystems rely on them to initialize
 obj-$(CONFIG_REGULATOR)		+= regulator/
@@ -59,7 +55,7 @@ obj-$(CONFIG_FB_INTEL)          += video/fbdev/intelfb/
 
 obj-$(CONFIG_PARPORT)		+= parport/
 obj-$(CONFIG_NVM)		+= lightnvm/
-obj-y				+= base/ block/ misc/ mfd/ nfc/
+obj-y				+= base/ block/ misc/ mfd/
 obj-$(CONFIG_LIBNVDIMM)		+= nvdimm/
 obj-$(CONFIG_DMA_SHARED_BUFFER) += dma-buf/
 obj-$(CONFIG_NUBUS)		+= nubus/
@@ -71,7 +67,6 @@ obj-y				+= net/
 obj-$(CONFIG_FUSION)		+= message/
 obj-y				+= cdrom/
 obj-y				+= auxdisplay/
-obj-$(CONFIG_PCCARD)		+= pcmcia/
 obj-$(CONFIG_DIO)		+= dio/
 obj-$(CONFIG_SBUS)		+= sbus/
 obj-$(CONFIG_ATA_OVER_ETH)	+= block/aoe/
@@ -96,7 +91,6 @@ obj-y				+= lguest/
 obj-$(CONFIG_CPU_FREQ)		+= cpufreq/
 obj-$(CONFIG_CPU_IDLE)		+= cpuidle/
 obj-y				+= mmc/
-obj-$(CONFIG_MEMSTICK)		+= memstick/
 obj-$(CONFIG_NEW_LEDS)		+= leds/
 obj-y				+= firmware/
 obj-$(CONFIG_CRYPTO)		+= crypto/
@@ -112,7 +106,6 @@ obj-y				+= platform/
 
 
 # Virtualization drivers
-obj-$(CONFIG_VIRT_DRIVERS)	+= virt/
 
 obj-$(CONFIG_PM_DEVFREQ)	+= devfreq/
 obj-$(CONFIG_MEMORY)		+= memory/

@@ -12,8 +12,6 @@ source "drivers/of/Kconfig"
 
 source "drivers/parport/Kconfig"
 
-source "drivers/pnp/Kconfig"
-
 source "drivers/block/Kconfig"
 
 source "drivers/nvme/Kconfig"
@@ -64,8 +62,6 @@ source "drivers/usb/Kconfig"
 
 source "drivers/mmc/Kconfig"
 
-source "drivers/memstick/Kconfig"
-
 source "drivers/leds/Kconfig"
 
 source "drivers/accessibility/Kconfig"
@@ -77,10 +73,6 @@ source "drivers/dma/Kconfig"
 source "drivers/dma-buf/Kconfig"
 
 source "drivers/auxdisplay/Kconfig"
-
-source "drivers/virt/Kconfig"
-
-source "drivers/virtio/Kconfig"
 
 source "drivers/platform/Kconfig"
 
