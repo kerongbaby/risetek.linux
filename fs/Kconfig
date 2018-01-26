@@ -13,9 +13,6 @@ if BLOCK
 config FS_IOMAP
 	bool
 
-source "fs/ext4/Kconfig"
-source "fs/jbd2/Kconfig"
-
 config FS_MBCACHE
 # Meta block cache for Extended Attributes (ext2/ext3/ext4)
 	tristate
@@ -88,8 +85,6 @@ source "fs/crypto/Kconfig"
 
 source "fs/notify/Kconfig"
 
-source "fs/quota/Kconfig"
-
 source "fs/overlayfs/Kconfig"
 
 menu "Caches"
@@ -105,11 +100,6 @@ endmenu
 endif # BLOCK
 
 if BLOCK
-menu "DOS/FAT/NT Filesystems"
-
-source "fs/fat/Kconfig"
-
-endmenu
 endif # BLOCK
 
 menu "Pseudo filesystems"
@@ -186,7 +176,6 @@ config ARCH_HAS_GIGANTIC_PAGE
 	bool
 
 source "fs/configfs/Kconfig"
-source "fs/efivarfs/Kconfig"
 
 endmenu
 
@@ -205,13 +194,7 @@ menuconfig MISC_FILESYSTEMS
 
 if MISC_FILESYSTEMS
 
-# UBIFS File system configuration
-source "fs/ubifs/Kconfig"
-source "fs/exofs/Kconfig"
-
 endif # MISC_FILESYSTEMS
-
-source "fs/exofs/Kconfig.ore"
 
 menuconfig NETWORK_FILESYSTEMS
 	bool "Network File Systems"
@@ -230,7 +213,6 @@ menuconfig NETWORK_FILESYSTEMS
 if NETWORK_FILESYSTEMS
 
 source "fs/nfs/Kconfig"
-source "fs/nfsd/Kconfig"
 
 config GRACE_PERIOD
 	tristate

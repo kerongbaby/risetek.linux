@@ -51,8 +51,6 @@ obj-$(CONFIG_SYSCTL)		+= drop_caches.o
 obj-$(CONFIG_FHANDLE)		+= fhandle.o
 obj-$(CONFIG_FS_IOMAP)		+= iomap.o
 
-obj-y				+= quota/
-
 obj-$(CONFIG_PROC_FS)		+= proc/
 obj-$(CONFIG_KERNFS)		+= kernfs/
 obj-$(CONFIG_SYSFS)		+= sysfs/
@@ -62,25 +60,18 @@ obj-y				+= devpts/
 obj-$(CONFIG_PROFILING)		+= dcookies.o
  
 # Do not add any filesystems before this line
-obj-$(CONFIG_EXT4_FS)		+= ext4/
 # We place ext4 before ext2 so that clean ext3 root fs's do NOT mount using the
 # ext2 driver, which doesn't know about journalling!  Explicitly request ext2
 # by giving the rootfstype= parameter.
-obj-$(CONFIG_JBD2)		+= jbd2/
 obj-y				+= ramfs/
 obj-$(CONFIG_HUGETLBFS)		+= hugetlbfs/
-obj-$(CONFIG_FAT_FS)		+= fat/
 obj-$(CONFIG_NFS_FS)		+= nfs/
 obj-$(CONFIG_EXPORTFS)		+= exportfs/
-obj-$(CONFIG_NFSD)		+= nfsd/
 obj-$(CONFIG_LOCKD)		+= lockd/
 obj-$(CONFIG_NLS)		+= nls/
-obj-$(CONFIG_UBIFS_FS)		+= ubifs/
 obj-$(CONFIG_OVERLAY_FS)	+= overlayfs/
 obj-$(CONFIG_SUN_OPENPROMFS)	+= openpromfs/
 obj-$(CONFIG_CACHEFILES)	+= cachefiles/
 obj-$(CONFIG_DEBUG_FS)		+= debugfs/
 obj-$(CONFIG_TRACING)		+= tracefs/
-obj-y				+= exofs/ # Multiple modules
-obj-$(CONFIG_EFIVAR_FS)		+= efivarfs/
 obj-$(CONFIG_YAFFS_FS)		+= yaffs2/
