@@ -21,7 +21,6 @@ obj-$(CONFIG_NET_KEY)		+= key/
 obj-$(CONFIG_BRIDGE)		+= bridge/
 obj-$(CONFIG_NET_DSA)		+= dsa/
 obj-$(CONFIG_NETROM)		+= netrom/
-obj-$(CONFIG_CAN)		+= can/
 obj-$(CONFIG_SUNRPC)		+= sunrpc/
 obj-$(CONFIG_L2TP)		+= l2tp/
 ifneq ($(CONFIG_VLAN_8021Q),)

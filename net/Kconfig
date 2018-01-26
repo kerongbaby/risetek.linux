@@ -334,8 +334,6 @@ endmenu
 
 endmenu
 
-source "net/can/Kconfig"
-
 config FIB_RULES
 	bool
 
