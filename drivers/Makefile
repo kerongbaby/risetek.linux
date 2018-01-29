@@ -49,19 +49,13 @@ obj-$(CONFIG_IOMMU_SUPPORT)	+= iommu/
 
 # i810fb and intelfb depend on char/agp/
 
-obj-$(CONFIG_PARPORT)		+= parport/
-obj-$(CONFIG_NVM)		+= lightnvm/
 obj-y				+= base/ block/ misc/ mfd/
-obj-$(CONFIG_LIBNVDIMM)		+= nvdimm/
 obj-$(CONFIG_DMA_SHARED_BUFFER) += dma-buf/
 obj-$(CONFIG_NUBUS)		+= nubus/
-obj-y				+= nvme/
 obj-$(CONFIG_MTD)		+= mtd/
 obj-$(CONFIG_SPI)		+= spi/
 obj-y				+= net/
 obj-$(CONFIG_FUSION)		+= message/
-obj-y				+= cdrom/
-obj-y				+= auxdisplay/
 obj-$(CONFIG_DIO)		+= dio/
 obj-$(CONFIG_SBUS)		+= sbus/
 obj-$(CONFIG_ATA_OVER_ETH)	+= block/aoe/
@@ -79,20 +73,16 @@ obj-$(CONFIG_RTC_LIB)		+= rtc/
 obj-y				+= i2c/
 obj-y				+= power/
 obj-$(CONFIG_WATCHDOG)		+= watchdog/
-obj-$(CONFIG_MD)		+= md/
-obj-$(CONFIG_ACCESSIBILITY)	+= accessibility/
 obj-$(CONFIG_EISA)		+= eisa/
 obj-y				+= lguest/
 obj-$(CONFIG_CPU_FREQ)		+= cpufreq/
 obj-$(CONFIG_CPU_IDLE)		+= cpuidle/
-obj-y				+= mmc/
 obj-$(CONFIG_NEW_LEDS)		+= leds/
 obj-y				+= firmware/
 obj-$(CONFIG_CRYPTO)		+= crypto/
 ifndef CONFIG_ARCH_USES_GETTIMEOFFSET
 obj-y				+= clocksource/
 endif
-obj-$(CONFIG_HID)		+= hid/
 obj-$(CONFIG_PPC_PS3)		+= ps3/
 obj-$(CONFIG_OF)		+= of/
 obj-$(CONFIG_VHOST_RING)	+= vhost/
@@ -108,4 +98,3 @@ obj-$(CONFIG_IIO)		+= iio/
 obj-$(CONFIG_POWERCAP)		+= powercap/
 obj-$(CONFIG_MCB)		+= mcb/
 obj-$(CONFIG_PERF_EVENTS)	+= perf/
-obj-$(CONFIG_NVMEM)		+= nvmem/
