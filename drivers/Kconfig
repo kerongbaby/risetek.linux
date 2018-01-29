@@ -26,8 +26,6 @@ source "drivers/input/Kconfig"
 
 source "drivers/char/Kconfig"
 
-source "drivers/i2c/Kconfig"
-
 source "drivers/spi/Kconfig"
 
 source "drivers/pinctrl/Kconfig"
@@ -52,17 +50,11 @@ source "drivers/dma/Kconfig"
 
 source "drivers/dma-buf/Kconfig"
 
-source "drivers/platform/Kconfig"
-
 source "drivers/clk/Kconfig"
 
 source "drivers/clocksource/Kconfig"
 
-source "drivers/iommu/Kconfig"
-
 source "drivers/soc/Kconfig"
-
-source "drivers/devfreq/Kconfig"
 
 source "drivers/memory/Kconfig"
 
@@ -73,11 +65,5 @@ source "drivers/pwm/Kconfig"
 source "drivers/irqchip/Kconfig"
 
 source "drivers/phy/Kconfig"
-
-source "drivers/powercap/Kconfig"
-
-source "drivers/mcb/Kconfig"
-
-source "drivers/perf/Kconfig"
 
 endmenu

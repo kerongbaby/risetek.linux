@@ -43,7 +43,6 @@ obj-y				+= tty/
 obj-y				+= char/
 
 # iommu/ comes before gpu as gpu are using iommu controllers
-obj-$(CONFIG_IOMMU_SUPPORT)	+= iommu/
 
 # gpu/ comes after char for AGP vs DRM startup and after iommu
 
@@ -70,7 +69,6 @@ obj-$(CONFIG_SERIO)		+= input/serio/
 obj-$(CONFIG_GAMEPORT)		+= input/gameport/
 obj-$(CONFIG_INPUT)		+= input/
 obj-$(CONFIG_RTC_LIB)		+= rtc/
-obj-y				+= i2c/
 obj-y				+= power/
 obj-$(CONFIG_WATCHDOG)		+= watchdog/
 obj-$(CONFIG_EISA)		+= eisa/
@@ -87,14 +85,9 @@ obj-$(CONFIG_PPC_PS3)		+= ps3/
 obj-$(CONFIG_OF)		+= of/
 obj-$(CONFIG_VHOST_RING)	+= vhost/
 obj-$(CONFIG_VHOST)		+= vhost/
-obj-y				+= platform/
 
 
 # Virtualization drivers
 
-obj-$(CONFIG_PM_DEVFREQ)	+= devfreq/
 obj-$(CONFIG_MEMORY)		+= memory/
 obj-$(CONFIG_IIO)		+= iio/
-obj-$(CONFIG_POWERCAP)		+= powercap/
-obj-$(CONFIG_MCB)		+= mcb/
-obj-$(CONFIG_PERF_EVENTS)	+= perf/
