@@ -20,8 +20,6 @@ source "drivers/nvme/Kconfig"
 
 source "drivers/misc/Kconfig"
 
-source "drivers/scsi/Kconfig"
-
 source "drivers/md/Kconfig"
 
 source "drivers/message/fusion/Kconfig"

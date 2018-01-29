@@ -55,7 +55,6 @@ obj-y				+= base/ block/ misc/ mfd/
 obj-$(CONFIG_LIBNVDIMM)		+= nvdimm/
 obj-$(CONFIG_DMA_SHARED_BUFFER) += dma-buf/
 obj-$(CONFIG_NUBUS)		+= nubus/
-obj-$(CONFIG_SCSI)		+= scsi/
 obj-y				+= nvme/
 obj-$(CONFIG_MTD)		+= mtd/
 obj-$(CONFIG_SPI)		+= spi/

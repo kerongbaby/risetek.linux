@@ -39,9 +39,6 @@ obj-$(CONFIG_USB_PRINTER)	+= class/
 obj-$(CONFIG_USB_WDM)		+= class/
 obj-$(CONFIG_USB_TMC)		+= class/
 
-obj-$(CONFIG_USB_STORAGE)	+= storage/
-obj-$(CONFIG_USB)		+= storage/
-
 obj-$(CONFIG_USB_MDC800)	+= image/
 obj-$(CONFIG_USB_MICROTEK)	+= image/
 
