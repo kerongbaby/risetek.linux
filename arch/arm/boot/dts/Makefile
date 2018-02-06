@@ -11,28 +11,15 @@ dtb-$(CONFIG_SOC_AT91RM9200) += \
 	at91rm9200ek.dtb \
 	mpa1600.dtb
 dtb-$(CONFIG_SOC_AT91SAM9) += \
-	animeo_ip.dtb \
-	at91-qil_a9260.dtb \
-	aks-cdu.dtb \
-	ethernut5.dtb \
-	evk-pro3.dtb \
-	tny_a9260.dtb \
-	usb_a9260.dtb \
 	at91sam9260ek.dtb \
 	at91sam9261ek.dtb \
 	at91sam9263ek.dtb \
 	at91-sam9_l9260.dtb \
-	tny_a9263.dtb \
-	usb_a9263.dtb \
 	at91-foxg20.dtb \
 	at91-kizbox.dtb \
 	at91sam9g20ek.dtb \
 	at91sam9g20ek_2mmc.dtb \
-	tny_a9g20.dtb \
-	usb_a9g20.dtb \
-	usb_a9g20_lpw.dtb \
 	at91sam9m10g45ek.dtb \
-	pm9g45.dtb \
 	at91sam9n12ek.dtb \
 	at91sam9rlek.dtb \
 	at91-ariag25.dtb \
