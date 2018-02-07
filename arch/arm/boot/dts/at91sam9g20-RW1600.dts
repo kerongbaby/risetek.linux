@@ -1,0 +1,49 @@
+/*
+ * at91sam9g20ek.dts - Device Tree file for Atmel at91sam9g20ek board
+ *
+ * Copyright (C) 2012 Jean-Christophe PLAGNIOL-VILLARD <plagnioj@jcrosoft.com>
+ *
+ * Licensed under GPLv2.
+ */
+/dts-v1/;
+#include "at91sam9g20ek_common.dtsi"
+
+/ {
+	model = "Atmel at91sam9 RW1600";
+	compatible = "atmel,at91sam9g20ek", "atmel,at91sam9g20", "atmel,at91sam9";
+
+	nand0: nand@60000000 {
+		nand-bus-width = <8>;
+		nand-ecc-mode = "hw";
+		atmel,has-pmecc;
+		atmel,pmecc-cap = <4>;
+		atmel,pmecc-sector-size = <512>;
+		nand-on-flash-bbt;
+		status = "okay";
+
+		redboot@0 {
+			label = "redboot";
+			reg = <0x0 0x400000>;
+		};
+
+		rootfs@400000 {
+			label = "rootfs";
+			reg = <0x440000 0x01bc0000>;
+		};
+	};
+
+	leds {
+		compatible = "gpio-leds";
+
+		ds1 {
+			label = "ds1";
+			gpios = <&pioB 18 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "heartbeat";
+		};
+
+		ds5 {
+			label = "ds5";
+			gpios = <&pioB 19 GPIO_ACTIVE_LOW>;
+		};
+	};
+};

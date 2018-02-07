@@ -11,6 +11,7 @@ dtb-$(CONFIG_SOC_AT91RM9200) += \
 	at91rm9200ek.dtb \
 	mpa1600.dtb
 dtb-$(CONFIG_SOC_AT91SAM9) += \
+	at91sam9g20-RW1600.dts \
 	at91sam9260ek.dtb \
 	at91sam9261ek.dtb \
 	at91sam9263ek.dtb \
