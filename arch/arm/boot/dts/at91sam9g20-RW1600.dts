@@ -12,12 +12,9 @@
 	model = "Atmel at91sam9 RW1600";
 	compatible = "atmel,at91sam9g20ek", "atmel,at91sam9g20", "atmel,at91sam9";
 
-	nand0: nand@60000000 {
+	nand0: nand@40000000 {
 		nand-bus-width = <8>;
-		nand-ecc-mode = "hw";
-		atmel,has-pmecc;
-		atmel,pmecc-cap = <4>;
-		atmel,pmecc-sector-size = <512>;
+		nand-ecc-mode = "soft";
 		nand-on-flash-bbt;
 		status = "okay";
 
