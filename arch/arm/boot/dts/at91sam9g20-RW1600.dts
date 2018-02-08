@@ -21,7 +21,7 @@
 	compatible = "atmel,at91sam9g20ek", "atmel,at91sam9g20", "atmel,at91sam9";
 
 	chosen {
-		bootargs = "mem=64M root=/dev/mtdblock1 rw";
+		bootargs = "mem=16M root=/dev/mtdblock1 rw";
 		stdout-path = "serial0:115200n8";
 	};
 
