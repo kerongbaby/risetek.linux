@@ -1,5 +1,4 @@
 # UAPI Header export list
-header-y += android/
 header-y += byteorder/
 header-y += can/
 header-y += caif/
@@ -8,7 +7,6 @@ header-y += hdlc/
 header-y += hsi/
 header-y += iio/
 header-y += isdn/
-header-y += mmc/
 header-y += nfsd/
 header-y += raid/
 header-y += spi/
@@ -21,7 +19,6 @@ header-y += netfilter_bridge/
 header-y += netfilter_ipv4/
 header-y += netfilter_ipv6/
 header-y += usb/
-header-y += wimax/
 
 genhdr-y += version.h
 
