@@ -19,7 +19,7 @@
 
 	chosen {
 		stdout-path = "serial0:115200n8";
-		bootargs = "console=ttyS0,115200 root=/dev/mtd/block2 rw";
+		bootargs = "console=ttyS0,115200 root=/dev/mtdblock2 rw";
 	};
 
 	memory {
